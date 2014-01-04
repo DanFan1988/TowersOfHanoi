@@ -1,0 +1,63 @@
+<html>
+<head>
+  <script src="jquery.js"></script>
+  <script src="hanoi.js"></script>
+  <script src="hanoiUI.js"></script>
+
+  <style>
+    .tower {
+    background-color: pink;
+    display: inline-block;
+    height: 300;
+    width: 300;
+    border: black solid thin;
+    box-sizing: border-box;
+    }
+
+    .disk {
+    height: 100;
+    margin-left: auto;
+    margin-right: auto;
+  /*  border: black solid thin;
+    box-sizing: border-box;*/
+    }
+
+    [data-size="1"] {
+      background-color: red;
+      width: 100;
+    }
+
+    [data-size="2"] {
+      background-color: white;
+      width: 200;
+    }
+
+    [data-size="3"] {
+      background-color: blue;
+      width: 300;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class="tower" id="0">
+      <div class="disk" id="4" data-size="1"></div>
+      <div class="disk" id="5" data-size="2"></div>
+      <div class="disk" id="6" data-size="3"></div>
+    </div>
+    <div class="tower" id="1">
+      <div class="disk" id="7" data-size="0"></div>
+      <div class="disk" id="8" data-size="0"></div>
+      <div class="disk" id="9" data-size="0"></div>
+    </div>
+    <div class="tower" id="2">
+      <div class="disk" id="10" data-size="0"></div>
+      <div class="disk" id="11" data-size="0"></div>
+      <div class="disk" id="12" data-size="0"></div>
+    </div>
+  </div>
+</body>
+</html>
